@@ -1,0 +1,27 @@
+{
+  "nodes": [
+    {"id": "Dorne", "group": 1},
+    {"id": "Iron Islands", "group": 2},
+    {"id": "The Crownlands", "group": 3},
+    {"id": "The Neck", "group": 4},
+    {"id": "The North", "group": 5},
+    {"id": "The Reach", "group": 6},
+    {"id": "The Riverlands", "group": 7},
+    {"id": "The Stormlands", "group": 8},
+    {"id": "The Vale", "group": 9},
+    {"id": "The Westerlands", "group": 10}
+  ],
+  "links": [
+    {"source":"Iron Islands", "target": "Dorne", "value":1},
+    {"source":"The Crownlands", "target": "Iron Islands", "value":2},
+    {"source":"The Neck", "target": "The Crownlands", "value":3},
+    {"source":"The North", "target": "The Neck", "value":4},
+    {"source":"The Reach", "target": "The North", "value":5},
+    {"source":"The Riverlands", "target": "The Reach", "value":6},
+    {"source":"The Stormlands", "target": "The Riverlands", "value":6},
+    {"source":"The Vale", "target": "The Riverlands", "value":7},
+    {"source":"The Westerlands", "target": "The Stormlands", "value":8},
+    {"source":"Dorne", "target": "The Vale", "value":9},
+    {"source":"Iron Islands", "target": "The Westerlands", "value":10}
+  ]
+}

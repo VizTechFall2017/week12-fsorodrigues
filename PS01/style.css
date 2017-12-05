@@ -1,0 +1,177 @@
+body {
+  background-color: #efefef;
+}
+
+.content {
+  width: 80vw;
+  height: 80vh;
+}
+
+#map-container {
+  width: 100%;
+  height: 100%;
+}
+
+#svgBox #svg1 {
+  margin: 0;
+}
+
+#svgBox #svg2 {
+  background: rgba(255,255,255,.7);
+  position: relative;
+  width: 200px;
+  height: 180px;
+  margin-bottom: -180px;
+}
+
+#svgBox .background {
+  fill: none;
+  pointer-events: all;
+}
+
+#svgBox .feature {
+  cursor: pointer;
+}
+
+#svgBox .feature.active {
+  fill: #bda2cc;
+}
+
+#svgBox .tooltip {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 250px;
+}
+
+#svgBox .state-tooltip {
+  position: absolute;
+  background-color: #FAFAFA;
+  border: 1pt solid #4A4A4A;
+  border-radius: 2%;
+  padding: .3rem;
+  font-family: "Open Sans", Verdana, sans-serif;
+  font-weight: 300;
+  font-size: .6rem;
+  opacity: .95;
+  max-width: 240px;
+
+}
+
+#svgBox .tooltip-content,
+#svgBox .state-data {
+  background-color: #FAFAFA;
+  border: 1pt solid #4A4A4A;
+  border-radius: 2%;
+  margin-right: 1%;
+  margin-top: .5%;
+  padding: .3rem;
+  font-family: "Open Sans", Verdana, sans-serif;
+  font-weight: 300;
+  font-size: .6rem;
+  opacity: .95
+}
+
+#svgBox .legend-label {
+  font-family: "Open Sans", Verdana, sans-serif;
+  font-weight: 300;
+  font-size: .8rem;
+}
+
+#svgBox .legend-title {
+  font-family: "Open Sans", serif;
+  font-weight: 700;
+  font-size: .8rem;
+}
+
+#svgBox .label {
+  font-family: "Open Sans", Verdana, sans-serif;
+}
+
+#svgBox p.location {
+  font-size: .8rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2rem;
+}
+
+#svgBox p.info {
+  font-size: .8rem;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.2rem;
+}
+
+#svgBox span.state {
+  font-weight: normal;
+  margin: 0;
+  line-height: 1rem;
+}
+
+#svgBox .button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#svgBox .buttons {
+  font-family: "Montserrat",sans-serif;
+  background-color: #B4D88E;
+  border: none;
+  color: #273914;
+  padding: 1% 1%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-right: 1%;
+  width: 135px;
+  box-shadow: inset 3px 3px 0px 0px #83BE44;
+}
+
+#svgBox .clicked {
+  font-family: "Montserrat", sans-serif;
+  background-color: #3d8017;
+  /*color: #273914;*/
+  color: #EEEEEE;
+  padding: 1% 1%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-right: 1%;
+  width: 135px;
+  /*box-shadow: inset 0 2px 0 0 #B8E986;*/
+}
+
+#svgBox tbody tr:nth-child(even) {
+  background-color: #e1e1e1;
+}
+
+#svgBox table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: .5rem;
+}
+
+#svgBox thead {
+  text-align: Left;
+}
+
+#svgBox th:nth-child(3),
+#svgBox th:nth-child(4),
+#svgBox td:nth-child(3),
+#svgBox td:nth-child(4) {
+  text-align: right;
+}
+
+#svgBox th,
+#svgBox td {
+  padding-left: .5em;
+}
+
+#svgBox th {
+  border-bottom: 1pt solid #4A4A4A;
+}
